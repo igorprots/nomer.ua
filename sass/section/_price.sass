@@ -1,0 +1,59 @@
+.price-info
+    display: flex
+    justify-content: space-around
+    @media screen and ( max-width: 768px )
+        flex-direction: column
+        align-items: center
+        
+    
+.price-card
+    box-shadow: 0 8px 22px hsla(221, 73%, 63%, 0.6)
+    margin:  60px 0
+    min-width: 280px
+    max-width: 480px
+.card
+    background: #ffffff
+    position: relative
+    &-btn
+        position: absolute
+        top: 100%
+        left: 50%
+        transform: translate(-50%, -50%)
+    &-title
+        background: #172c42
+        font-weight: 800
+        color: #ffffff
+        text-align: center
+        font-size: 28px
+        padding: 20px 0
+    &-info
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 20px 0 
+        border-bottom: 1px solid #e2e2e2
+        &_item
+            display: flex
+            flex-direction: row
+            align-items: center
+            padding: 20px 40px
+
+    &-text 
+        padding-left: 20px
+    &-cost
+        display: flex
+        flex-direction: column
+        align-items: center
+        font-size: 25px
+        font-family: 'Muller Light'
+        padding: 30px 0 20px
+        margin-bottom: 20px
+
+        &-old
+            text-decoration: line-through
+        &-relative span
+            font-family: 'Muller Black'
+            font-size: 50px
+
+
+

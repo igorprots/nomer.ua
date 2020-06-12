@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Muller';
+    src: url('MullerLight.eot');
+    src: url('MullerLight.eot?#iefix') format('embedded-opentype'),
+        url('MullerLight.woff2') format('woff2'),
+        url('MullerLight.woff') format('woff'),
+        url('MullerLight.ttf') format('truetype'),
+        url('MullerLight.svg#MullerLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('MullerBlack.eot');
+    src: url('MullerBlack.eot?#iefix') format('embedded-opentype'),
+        url('MullerBlack.woff2') format('woff2'),
+        url('MullerBlack.woff') format('woff'),
+        url('MullerBlack.ttf') format('truetype'),
+        url('MullerBlack.svg#MullerBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

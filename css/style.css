@@ -1,0 +1,381 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 25px 0 25px;
+  }
+}
+
+@font-face {
+  font-family: 'Muller Regular';
+  src: url("../fonts/MullerRegular/MullerRegular.eot");
+  src: url("../fonts/MullerRegular/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype"), url("../fonts/MullerRegular/MullerRegular.svg#MullerRegular/MullerRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller Black';
+  src: url("../fonts/MullerBlack/MullerBlack.eot");
+  src: url("../fonts/MullerBlack/MullerBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBlack/MullerBlack.woff") format("woff"), url("../fonts/MullerBlack/MullerBlack.ttf") format("truetype"), url("../fonts/MullerBlack/MullerBlack.svg#MullerBlack/MullerBlack") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller Light';
+  src: url("../fonts/MullerLight/MullerLight.eot");
+  src: url("../fonts/MullerLight/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLight/MullerLight.woff") format("woff"), url("../fonts/MullerLight/MullerLight.ttf") format("truetype"), url("../fonts/MullerLight/MullerLight.svg#MullerLight/MullerLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.content-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  padding-bottom: 60px;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+.btn {
+  background: #ff374e;
+  border: #ff374e;
+  color: #ffffff;
+  text-align: center;
+  min-width: 220px;
+  max-width: 325px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f53a50;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding-top: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.header-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+
+.header-phone a {
+  color: #000000;
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ff374e;
+  padding: 15px 50px;
+  margin-left: 40px;
+  max-width: 260px;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+.header-btn:hover {
+  background: #ff374e;
+  color: #ffffff;
+}
+
+.header-bg {
+  background: url(../img/header-bg.png) no-repeat;
+  background-size: cover;
+  height: 42.6vw;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.left-side-title {
+  font-weight: 800;
+  font-size: 44px;
+  max-width: 580px;
+}
+
+.left-side-title span {
+  color: #ff374e;
+}
+
+.left-side-text {
+  font-family: 'Muller Regular';
+  text-align: justify;
+  font-size: 24px;
+  max-width: 580px;
+  padding-top: 50px;
+}
+
+.header-nav {
+  display: inline-flex;
+  overflow: hidden;
+  position: absolute;
+  max-width: 100%;
+  top: 100%;
+}
+
+@media (max-width: 580px) {
+  .header-nav {
+    overflow: auto;
+  }
+}
+
+.nav-item {
+  color: #000000;
+  padding: 50px 20px;
+  transition: .3s;
+  margin: 0 6px;
+  z-index: 1;
+}
+
+.nav-item:hover {
+  background: #ff213b;
+  color: #ffffff;
+}
+
+.active {
+  background: #ff213b;
+  color: #ffffff;
+}
+
+.footer {
+  background: #172c42;
+  font-weight: normal;
+  width: 100%;
+}
+
+.footer-btn {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer-btn span {
+  padding-right: 20px;
+}
+
+.footer-btn:hover {
+  font-weight: bold;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 50px 0;
+}
+
+#advantages {
+  margin: 80px;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .advantages-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advantages-item {
+  flex-basis: 50%;
+}
+
+.advantages-img {
+  width: 530px;
+}
+
+@media screen and (max-width: 768px) {
+  .advantages-img {
+    width: auto;
+  }
+}
+
+.advantages-content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.content-item {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.content-item_info {
+  padding-left: 30px;
+}
+
+.content-item_title {
+  font-weight: 800;
+  font-size: 28px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.content-item_title::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  left: 0;
+  border-top: 10px solid red;
+}
+
+.content-item_text {
+  font-family: 'Muller Regular';
+  font-size: 16px;
+}
+
+.price-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .price-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.price-card {
+  box-shadow: 0 8px 22px rgba(92, 135, 230, 0.6);
+  margin: 60px 0;
+  min-width: 280px;
+  max-width: 480px;
+}
+
+.card {
+  background: #ffffff;
+  position: relative;
+}
+
+.card-btn {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-title {
+  background: #172c42;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px 0;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.card-info_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.card-text {
+  padding-left: 20px;
+}
+
+.card-cost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  font-family: 'Muller Light';
+  padding: 30px 0 20px;
+  margin-bottom: 20px;
+}
+
+.card-cost-old {
+  text-decoration: line-through;
+}
+
+.card-cost-relative span {
+  font-family: 'Muller Black';
+  font-size: 50px;
+}
+/*# sourceMappingURL=style.css.map */
