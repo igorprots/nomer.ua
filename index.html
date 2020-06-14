@@ -8,10 +8,13 @@
     <title> Test | Protsenko </title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;800;900&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 
-<body ng-controller="MainCtrl">
+<body>
 
     <!-- content start -->
     <div class="content">
@@ -247,6 +250,26 @@
         </section>
         <!-- price end -->
 
+        <!-- testimonial start -->
+        <section id="testimonial">
+            <div class="owl-carousel container">
+                <div class="testimoinal-item">
+                    <img src="img/carousel-img.png" alt="">
+                </div>
+                <div class="testimoinal-item">
+                    <img src="img/carousel-img.png" alt="">
+                </div>
+                <div class="testimoinal-item">
+                    <img src="img/carousel-img.png" alt="">
+                </div>
+                <div class="owl-theme">
+                    <div class="owl-controls">
+                        <div class="custom-nav owl-nav"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial end -->
     </div>
     <!-- content end -->
 
@@ -266,9 +289,51 @@
     <!-- footer end -->
 
 
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+
+    <script>
+        // $(document).ready(function() {
+        //     $(".owl-carousel").owlCarousel();
+        // });
+        // $(document).ready(function() {
+        //     $(".owl-carousel").owlCarousel({
+        //         loop: true,
+        //         autoPlay: 3000,
+        //         nav: true,
+        //         navText: [
+        //             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        //             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+        //         ],
+        //     });
+        // });
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoPlay: 3000,
+            navText: [
+                '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+                '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+            ],
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: true
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: true
+                }
+            }
+        })
+    </script>
     <script src="js/navbar.js"></script>
     <script src="js/scroll.js"></script>
 

@@ -194,36 +194,9 @@ a {
   color: #ffffff;
 }
 
-.active {
+.is-active {
   background: #ff213b;
   color: #ffffff;
-}
-
-.footer {
-  background: #172c42;
-  font-weight: normal;
-  width: 100%;
-}
-
-.footer-btn {
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.footer-btn span {
-  padding-right: 20px;
-}
-
-.footer-btn:hover {
-  font-weight: bold;
-}
-
-.footer-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  padding: 50px 0;
 }
 
 #advantages {
@@ -377,5 +350,72 @@ a {
 .card-cost-relative span {
   font-family: 'Muller Black';
   font-size: 50px;
+}
+
+.footer {
+  background: #172c42;
+  font-weight: normal;
+  width: 100%;
+}
+
+.footer-btn {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer-btn span {
+  padding-right: 20px;
+}
+
+.footer-btn:hover {
+  font-weight: bold;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 50px 0;
+}
+
+#testimonial {
+  position: relative;
+}
+
+#testimonial .owl-theme .custom-nav {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  height: 100px;
+  color: inherit;
+  background: #ffffff;
+  z-index: 100;
+}
+
+.owl-prev i,
+.owl-next i {
+  font-size: 2.5rem;
+  box-shadow: 0 8px 22px rgba(92, 135, 230, 0.6);
+  border-radius: 50%;
+  padding: 10px 20px;
+}
+
+.owl-prev {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: -20px;
+}
+
+.owl-next {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: -40px;
 }
 /*# sourceMappingURL=style.css.map */
