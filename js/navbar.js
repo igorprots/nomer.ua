@@ -1,4 +1,10 @@
-$(".nav-item").on("click", function(e) {
-    $("a.nav-item").removeClass("is-active");
-    $(this).addClass("is-active");
-});
+// $(".nav-link").on("click", function(e) {
+//     $("a.nav-link").removeClass("is-active");
+//     $(this).addClass("is-active");
+// });
+
+$(document).ready(function() {
+    $('.nav-toggle').click(function() {
+        $('.nav').toggleClass('is-active')
+    })
+})
