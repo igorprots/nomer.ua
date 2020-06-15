@@ -126,10 +126,20 @@ a {
   padding: 20px;
   font-size: 24px;
   cursor: pointer;
+  -webkit-transition: background 0.2s ease-in;
+  transition: background 0.2s ease-in;
 }
 
 .btn:hover {
-  background: #f53a50;
+  background: #ff213b;
+}
+
+.btn:active {
+  background: #e40f28;
+}
+
+.btn:focus {
+  outline: none;
 }
 
 .header {
@@ -724,7 +734,7 @@ a {
   padding-right: 20px;
 }
 
-.footer-btn:hover {
+.footer-btn span:hover {
   font-weight: bold;
 }
 
@@ -828,7 +838,7 @@ a {
 
 @media screen and (max-width: 1200px) {
   .form {
-    padding-left: 10%;
+    padding-left: 5%;
   }
 }
 
@@ -865,7 +875,6 @@ a {
 }
 
 .form-input:focus {
-  background-color: #ececec;
   outline: none;
   -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
@@ -902,5 +911,86 @@ a {
 
 .form-btn {
   margin-top: 25px;
+}
+
+.error {
+  background: #ff374e;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0px 20px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.success {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.404);
+  padding-top: 3%;
+  display: none;
+}
+
+.success-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../img/success-bg.png) no-repeat top;
+  background-size: cover;
+  max-width: 660px;
+  max-height: 540px;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 0px 4px 8px 0px rgba(50, 50, 50, 0.75);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.success-check {
+  color: #ff374e;
+  font-size: 120px;
+  padding-top: 50px;
+}
+
+.success-title {
+  color: #000000;
+  font-size: 34px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.success-text {
+  font-family: 'Muller Regular';
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.success-contact {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.success-contact a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0;
+}
+
+.success-contact i {
+  border: none;
+  background: #172c42;
+  border-radius: 60px;
+  padding: 0.5em 0.6em;
+}
+
+.success-contact .facebook {
+  padding: 0.5em  0.7em;
 }
 /*# sourceMappingURL=style.css.map */
