@@ -874,7 +874,7 @@ a {
   color: #000000;
 }
 
-.form-input:focus {
+.form-input:focus #ececec {
   outline: none;
   -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
@@ -920,6 +920,7 @@ a {
   padding: 0px 20px;
   margin-bottom: 5px;
   font-size: 18px;
+  display: none;
 }
 
 .success {
