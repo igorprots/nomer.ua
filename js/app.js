@@ -44,7 +44,7 @@ forms.forEach(formElement => {
                         <p>Заявка с сайта <br> test.protsenko</p>
                         <p style="font-size:32px;">Имя  <br> ${user_name }</p>
                         <p style="font-size:32px;">Номер телфона  <br>${ user_phone}</p>
-                        <p style="font-weight:bold;font-size:38px;">Выбраные номера <br>${user_number}</p>
+                        <p style="font-size:32px;">Выбраные номера <br>${user_number}</p>
                     </body>
                 </html>`;
         sendEmail(emailText);

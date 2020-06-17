@@ -959,7 +959,6 @@ a {
   background: rgba(0, 0, 0, 0.404);
   padding-top: 3%;
   position: fixed;
-  display: none;
 }
 
 .success-wrapper {
@@ -1066,6 +1065,13 @@ a {
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .success-close {
+    top: 10px;
+    right: 20px;
+  }
 }
 
 .popup {
