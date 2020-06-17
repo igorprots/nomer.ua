@@ -238,6 +238,7 @@ a {
   max-width: 260px;
   border-radius: 28px;
   cursor: pointer;
+  color: #000000;
 }
 
 .header-btn:hover {
@@ -823,6 +824,10 @@ a {
   margin-top: 0;
 }
 
+.testimonial-carousel .owl-carousel {
+  z-index: 0;
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,6 +844,12 @@ a {
 @media screen and (max-width: 1200px) {
   .form {
     padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .form {
+    padding-left: 10%;
   }
 }
 
@@ -864,6 +875,12 @@ a {
   }
 }
 
+@media (min-width: 768.1px) and (max-width: 991px) {
+  .form-label {
+    margin: 10px 0;
+  }
+}
+
 .form-input {
   padding: 0 20px;
   height: 55px;
@@ -883,6 +900,12 @@ a {
 @media screen and (max-width: 1200px) {
   .form-input {
     height: 52px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .form-input {
+    height: 44px;
   }
 }
 
@@ -913,6 +936,12 @@ a {
   margin-top: 25px;
 }
 
+@media screen and (max-width: 991px) {
+  .form-btn {
+    padding: 10px;
+  }
+}
+
 .error {
   background: #ff374e;
   font-weight: bold;
@@ -929,6 +958,7 @@ a {
   position: absolute;
   background: rgba(0, 0, 0, 0.404);
   padding-top: 3%;
+  position: fixed;
   display: none;
 }
 
@@ -952,12 +982,25 @@ a {
   margin: 0 auto;
   left: 0;
   right: 0;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .success-wrapper {
+    max-width: 90%;
+  }
 }
 
 .success-check {
   color: #ff374e;
   font-size: 120px;
   padding-top: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  .success-check {
+    font-size: 80px;
+  }
 }
 
 .success-title {
@@ -967,15 +1010,34 @@ a {
   padding: 20px;
 }
 
+@media screen and (max-width: 576px) {
+  .success-title {
+    font-size: 24px;
+    padding: 20px 0;
+  }
+}
+
 .success-text {
   font-family: 'Muller Regular';
   font-size: 20px;
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 576px) {
+  .success-text {
+    text-align: center;
+  }
+}
+
 .success-contact {
   font-size: 38px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .success-contact {
+    font-size: 20px;
+  }
 }
 
 .success-contact a {
@@ -993,5 +1055,63 @@ a {
 
 .success-contact .facebook {
   padding: 0.5em  0.7em;
+}
+
+.success-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 32px;
+  color: #000000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popup {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  text-align: center;
+}
+
+.popup .popup-content {
+  margin: 20px auto 0px auto;
+  padding: 10px;
+  height: auto;
+  -webkit-box-shadow: 0px 0px 10px #000;
+          box-shadow: 0px 0px 10px #000;
+  background: #ffffff;
+  max-width: 450px;
+  position: relative;
+}
+
+.popup .popup-content .close {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  font-size: 28px;
+  text-decoration: none;
+  color: #000;
+}
+
+.form_popup {
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+}
+
+.form-input_popup {
+  border: 1px solid gray;
+  margin: 5px 0;
+  height: 52px;
+}
+
+.btn_popup {
+  width: 80%;
+  margin: 20px auto;
 }
 /*# sourceMappingURL=style.css.map */

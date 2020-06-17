@@ -3,8 +3,8 @@
 //     $(this).addClass("is-active");
 // });
 
-$(document).ready(function() {
-    $('.nav-toggle').click(function() {
+$(document).ready(() => {
+    $('.nav-toggle').click(() => {
         $('.nav').toggleClass('is-active')
     })
 })
