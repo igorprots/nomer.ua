@@ -29,7 +29,19 @@ $(document).ready(function() {
     });
 });
 
+// For popup
 
+PopUpHide();
+
+function PopUpShow() {
+    $("#popup1").show();
+}
+
+function PopUpHide() {
+    $("#popup1").hide();
+}
+
+// for form
 const forms = [...document.querySelectorAll('.form')];
 console.log(forms);
 forms.forEach(formElement => {
@@ -67,4 +79,37 @@ function sendEmail(emailtText) {
         $(".success").css("display", "block");
         PopUpHide()
     });
+}
+
+// for navbar
+
+$(document).ready(() => {
+    $(".nav-link").on("click", function(e) {
+        $("a.nav-link").removeClass("is-active");
+        $(this).addClass("is-active");
+    });
+    $('.nav-toggle').click(() => {
+        $('.nav').toggleClass('active-toggle')
+    })
+})
+
+// for scroll
+
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault()
+
+        const blockID = anchor.getAttribute('href').substr(1)
+        console.log(anchor);
+        // document.getElementById().scrollIntoView({
+        //     behavior: 'smooth',
+        //     block: 'start'
+        // })
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#" + blockID).offset().top
+        }, 1000);
+    })
 }
