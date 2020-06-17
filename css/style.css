@@ -282,7 +282,7 @@ a {
   }
 }
 
-.left-side {
+.intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,7 +300,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .left-side {
+  .intro {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -312,49 +312,49 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .left-side-wrapper {
+  .intro-wrapper {
     margin: 60px 0;
   }
 }
 
-.left-side-title {
+.intro-title {
   font-weight: 800;
   font-size: 44px;
   max-width: 580px;
 }
 
 @media screen and (max-width: 1200px) {
-  .left-side-title {
+  .intro-title {
     font-size: 42px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .left-side-title {
+  .intro-title {
     font-size: 38px;
     padding-top: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .left-side-title {
+  .intro-title {
     padding-top: 0;
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .left-side-title {
+  .intro-title {
     font-size: 34px;
     padding-bottom: 20px;
   }
 }
 
-.left-side-title span {
+.intro-title span {
   color: #ff374e;
 }
 
-.left-side-text {
+.intro-text {
   font-family: 'Muller Regular';
   text-align: justify;
   font-size: 22px;
@@ -363,19 +363,19 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
-  .left-side-text {
+  .intro-text {
     max-width: 520px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .left-side-text {
+  .intro-text {
     padding-top: 10px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .left-side-text {
+  .intro-text {
     font-size: 18px;
     max-width: 100%;
     padding: 30px 0 80px;
@@ -383,7 +383,7 @@ a {
 }
 
 @media screen and (max-width: 425px) {
-  .left-side-text {
+  .intro-text {
     padding: 10px 0 0;
   }
 }
@@ -515,17 +515,14 @@ a {
   }
 }
 
-.advantages-item {
+.advantages_img {
+  width: 530px;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
 }
 
-.advantages-img {
-  width: 530px;
-}
-
 @media screen and (max-width: 768px) {
-  .advantages-img {
+  .advantages_img {
     display: none;
   }
 }
@@ -541,6 +538,8 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 
 @media screen and (max-width: 768px) {
@@ -549,7 +548,7 @@ a {
   }
 }
 
-.content-item {
+.advantages-content-item {
   padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,11 +562,11 @@ a {
           justify-content: center;
 }
 
-.content-item_info {
+.advantages-content-item_info {
   padding-left: 30px;
 }
 
-.content-item_title {
+.advantages-content-item_title {
   font-weight: 800;
   font-size: 28px;
   position: relative;
@@ -575,7 +574,7 @@ a {
   margin: 0;
 }
 
-.content-item_title::after {
+.advantages-content-item_title::after {
   content: "";
   position: absolute;
   width: 100px;
@@ -584,13 +583,26 @@ a {
   border-top: 10px solid red;
 }
 
-.content-item_text {
+.advantages-content-item_text {
   font-family: 'Muller Regular';
   font-size: 16px;
 }
 
-#price {
+.price {
   margin: 0 auto;
+}
+
+.price-text {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Muller Regular';
+  padding: 20px;
+  font-weight: bold;
+}
+
+.price-text span {
+  color: red;
+  padding-right: 5px;
 }
 
 .price-info {
@@ -613,7 +625,9 @@ a {
   }
 }
 
-.price-card {
+.card {
+  background: #ffffff;
+  position: relative;
   box-shadow: 0px 4px 8px 0px rgba(50, 50, 50, 0.75);
   -webkit-box-shadow: 0px 4px 8px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 4px 8px 0px rgba(50, 50, 50, 0.75);
@@ -623,17 +637,12 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
-  .price-card {
+  .card {
     max-width: 350px;
   }
 }
 
-.card {
-  background: #ffffff;
-  position: relative;
-}
-
-.card-btn {
+.card_btn {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -687,7 +696,7 @@ a {
   }
 }
 
-.card-text {
+.card_text {
   padding-left: 20px;
 }
 
@@ -714,26 +723,13 @@ a {
   }
 }
 
-.card-cost-old {
+.card-cost_old {
   text-decoration: line-through;
 }
 
-.card-cost-new span {
+.card-cost_new span {
   font-family: 'Muller Black';
   font-size: 50px;
-}
-
-.price-footer-text {
-  text-align: center;
-  font-size: 18px;
-  font-family: 'Muller Regular';
-  padding: 20px;
-  font-weight: bold;
-}
-
-.price-footer-text span {
-  color: red;
-  padding-right: 5px;
 }
 
 .footer {
@@ -742,17 +738,29 @@ a {
   width: 100%;
 }
 
-.footer-btn {
+.footer_btn {
   color: #ffffff;
   cursor: pointer;
 }
 
-.footer-btn span {
+.footer_btn span {
   padding-right: 20px;
 }
 
-.footer-btn span:hover {
+.footer_btn span:hover {
   font-weight: bold;
+}
+
+@media screen and (max-width: 375px) {
+  .footer_btn span {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer_logo {
+    width: 160px;
+  }
 }
 
 .footer-wrap {
@@ -767,7 +775,7 @@ a {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 50px 0;
+  padding: 50px 25px;
 }
 
 .testimonial-carousel {

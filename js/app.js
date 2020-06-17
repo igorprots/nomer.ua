@@ -1,3 +1,5 @@
+// Carousel
+
 $(document).ready(function() {
 
     var owl = $(".owl-carousel");
@@ -29,7 +31,7 @@ $(document).ready(function() {
     });
 });
 
-// For popup
+// Popup-form
 
 PopUpHide();
 
@@ -41,9 +43,8 @@ function PopUpHide() {
     $("#popup1").hide();
 }
 
-// for form
+// Form
 const forms = [...document.querySelectorAll('.form')];
-console.log(forms);
 forms.forEach(formElement => {
     formElement.addEventListener('submit', () => {
         const user_name = formElement.querySelector('input[name="user_name"]').value;
@@ -81,7 +82,7 @@ function sendEmail(emailtText) {
     });
 }
 
-// for navbar
+// Navbar
 
 $(document).ready(() => {
     $(".nav-link").on("click", function(e) {
@@ -93,7 +94,7 @@ $(document).ready(() => {
     })
 })
 
-// for scroll
+//Scroll
 
 
 const anchors = document.querySelectorAll('a[href*="#"]')
@@ -101,13 +102,8 @@ const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
     anchor.addEventListener('click', function(e) {
         e.preventDefault()
-
         const blockID = anchor.getAttribute('href').substr(1)
         console.log(anchor);
-        // document.getElementById().scrollIntoView({
-        //     behavior: 'smooth',
-        //     block: 'start'
-        // })
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#" + blockID).offset().top
         }, 1000);

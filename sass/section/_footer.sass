@@ -2,7 +2,7 @@
     background: #172c42 
     font-weight: normal 
     width: 100% 
-    &-btn 
+    &_btn 
         color: #ffffff 
         cursor: pointer 
         // background: #172c42
@@ -13,9 +13,16 @@
             padding-right: 20px 
             &:hover 
                 font-weight: bold 
+            @media screen and ( max-width: 375px  )
+                padding-right: 10px
+    &_logo
+        @media screen and ( max-width:375px  )
+            width: 160px
+            
+                
 .footer-wrap 
     display: flex 
     justify-content: space-between 
     align-items: center 
     align-content: center 
-    padding: 50px 0
+    padding: 50px 25px

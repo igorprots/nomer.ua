@@ -14,11 +14,10 @@
         @media screen and ( max-width:  991px)
             flex-direction: column
             align-items: center
-    &-item
-        flex-basis: 40% 
         
-    &-img
+    &_img
         width: 530px
+        flex-basis: 40% 
         @media screen and ( max-width:  768px)
             display: none
 
@@ -26,34 +25,33 @@
         display: flex
         flex-direction: column
         align-items: end
+        flex-basis: 40% 
         @media screen and ( max-width:768px  )
             padding-top: 50px
 
-            
+        &-item
+            padding-bottom: 20px
+            display: flex
+            flex-direction: row
+            justify-content: center
+            &_info
+                padding-left: 30px
+            &_title
+                font-weight: 800
+                font-size: 28px
+                position: relative
+                padding-bottom: 20px
+                margin: 0
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 100px
+                    bottom: 0
+                    left: 0
+                    border-top: 10px solid red
+            &_text
+                font-family: 'Muller Regular'
+                font-size: 16px
 
-.content-item
-    padding-bottom: 20px
-    display: flex
-    flex-direction: row
-    justify-content: center
-    &_info
-        padding-left: 30px
-    &_title
-        font-weight: 800
-        font-size: 28px
-        position: relative
-        padding-bottom: 20px
-        margin: 0
-        &::after
-            content: ""
-            position: absolute
-            width: 100px
-            bottom: 0
-            left: 0
-            border-top: 10px solid red
-    &_text
-        font-family: 'Muller Regular'
-        font-size: 16px
-
+                
         
- 
