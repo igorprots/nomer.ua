@@ -36,7 +36,7 @@ $(document).ready(function() {
 PopUpHide();
 
 function PopUpShow() {
-    $("#popup1").show();
+    $("#popup1").show().removeClass('none');
 }
 
 function PopUpHide() {
